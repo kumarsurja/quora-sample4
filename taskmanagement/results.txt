@@ -1,0 +1,32 @@
+test_log
+System check identified no issues (0 silenced).
+{'email': 'rodriguezryan@example.com', 'password': 'admin@123', 'first_name': 'diaztimothy', 'last_name': 'example.org'}
+**********************************************************************
+Inactive User can't login:: Passed
+**********************************************************************
+None
+Inactive User can't login:: Passed
+<Response status_code=405, "application/json">
+**********************************************************************
+Authorization Token needed for user list:: Passed
+**********************************************************************
+None
+Authorization Token needed for user list:: Passed
+{'email': 'jenniferwilkerson@example.net', 'password': 'admin@123', 'first_name': 'ywilliams', 'last_name': 'example.com'}
+**********************************************************************
+Only Active user can login:: Passed
+**********************************************************************
+None
+Only Active user can login:: Passed
+{'email': 'murphyvanessa@example.net', 'password': 'admin@123', 'first_name': 'aprilsnyder', 'last_name': 'example.org'}
+**********************************************************************
+User Registration Successful:: Passed
+**********************************************************************
+None
+User Registration Successful:: Passed
+{}
+**********************************************************************
+User Can't be added with NO details:: Passed
+**********************************************************************
+None
+User Can't be added with NO details:: Passed

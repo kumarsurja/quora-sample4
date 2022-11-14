@@ -1,0 +1,123 @@
+Quora Clone
+
+Problem Description:-
+
+Create a Django Project which includes the following stories. Focus on Backend Design, Business logics and REST APIs .
+The candidate should ensure that-
+    -Availability of Git, Python and Django on their system as part of the setup exercise.
+    -Preferred IDE is PyCharm
+    -Import this project from git repo and do your task.
+    -Postman tool to test the REST APIs.
+    -Writing and Running the unit test for your task is your choice.
+
+
+Problem Breakdown
+
+To start the development a skeleton repo for the project is provided at the github link –
+https://github.com/kumarram1011/Dec_Q1  (master branch)
+
+Then repo can be cloned into their local system through HTTPs or SSH.  After cloning the project at your location, follow the below points:
+    
+Create Virtual env (ubuntu)
+        1. sudo apt install python3-venv
+        2. python3 -m venv relevel_env
+        3. cd relevel_env/
+        4. source bin/activate
+Now quit this env location and jump to your working location/ Parent directory
+    
+        
+Install all dependencies using ‘pip install -r requirements.txt’
+Now run your initial migrations with the command as:
+    1. python manage.py makemigrations
+    2. python manage.py migrate
+
+    
+Note :-
+
+A.  Initially there is no any model in your projects so the 1st command  will give you the
+      response has "NO changes" but the 2nd command will configure you all initial
+      settings like DB and all.
+B.  At every stage while developing/implementing the features please use both of the
+     above commands to reflect your changes in the running/development server.
+
+-Run the server by the following command
+    python manage.py runserver
+-You can run the unittest by the following command.
+    python manage.py test
+
+The hosted app can be checked on http://localhost:8000 on the browser.
+
+
+
+
+
+Round 3:
+    
+    Story 1.
+    1. Create a User app/module to perform user related stuff.
+    2. Inherit the Django "AbstractBaseUser" for your user model.
+    3. Create a model "user" with basic details as :- First Name, Last Name , Email , Phone ,
+                Password, Is Active . You can add more if needed.
+    4. Create an API for SignUp/Register the user with basic details as :- First Name, Last Name ,
+                Email , Phone , Password .
+    5. Use the end point for signup  as :- /user/signup/. (Ex:- http://localhost:8000/user/signup/ )
+    6. Apply proper validations for the value
+    7. Use an appropriate HTTP method out of GET, POST, PUT, DELETE, etc.
+    8. The successful request should return 200 status code.
+    9. For Any kind of unsuccessful or invalid should return 400 status code .
+    
+    Story 2.    
+    1. Create an API for Login using email and password.
+    2. Use the end point for Login  as :- /user/login/. (Ex:- http://localhost:8000/user/login/ )
+    3. Restrict the condition that only active users can login.
+    4. The response should contain the necessary fields as name,email,is_active,token,etc.
+    5. Apply proper validations for the value
+    6. Use an appropriate HTTP method out of GET, POST, PUT, DELETE, etc.
+    7. The successful request should return 200 status code.
+    8. For Any kind of unsuccessful or invalid should return 400 status code .
+
+Key point that need to strictly follow:
+    1. The End point will be the same as provided in the story.
+    2. Every successful request should return the response with  200 status code.
+    3. Every unsuccessful request should return the response with  400 status code.
+    4. Try to give the response with data in the “data” field. If the data is not in scope then        respond with an empty list. 
+        EX:-
+              Input : {
+                    "email":"testadmin100@yopmail.com",
+                    "password":"admin@123"
+                }
+        Response 1 : {
+                    "message": "Logged in successfully.",
+                    "data": {
+                        "id": 13,
+                        "email": "suser@yopmail.com",
+                        "full_name": " ",
+                        "is_active": true,
+                        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMywidXNlcm5hbWUiOiJzdXNlckB5b3BtYWlsLmNvbSIsImV4cCI6MTY2ODM2MjAxNCwiZW1haWwiOiJzdXNlckB5b3BtYWlsLmNvbSIsIm9yaWdfaWF0IjoxNjY4MzYwMjE0fQ.o6hU1hU61D3_lpOdGr2AM0j5zv2AEUpTN1uKI2H8wT8"
+                    }
+                }
+        Response 2 : {
+                    "message": "Incorrect Password",
+                    "data": { }
+                    }
+
+
+Submission Instructions
+
+Code Submission: 
+Compress the code on the local system in the form of a *.zip file.
+Upload the code on your personal google drive in a folder titled - “Name_BD_<Round Name> Code Base”
+Don’t forget to change the permissions of the folder to ‘Anyone with the link can edit’.
+
+
+
+Loom video submission: 
+Create an account on Loom. 
+Go through the quick tutorial on how to record loom videos. 
+Create a Loom video (while screen sharing) covering the following points:
+Show the functionality of the app you have created i.e demo of the working APIs through a command line. (1 min)
+Run through the key parts of your code explaining the core logic and how you organized the code. (2 min)
+Explain your problem-solving approach (what logic you have used and why). (2 min)
+Please keep your explanation to under 5 mins only.
+Avoid too much jargon and explain your app in a simple and clear manner. 
+

@@ -1,0 +1,16 @@
+2022-11-14 09:05:59,367 - django_test - INFO - test_log
+2022-11-14 09:05:59,649 - django_test - INFO - **********************************************************************
+2022-11-14 09:05:59,649 - django_test - INFO - None
+2022-11-14 09:05:59,649 - django_test - INFO - Inactive User can't login:: Passed
+2022-11-14 09:05:59,659 - django_test - INFO - **********************************************************************
+2022-11-14 09:05:59,660 - django_test - INFO - None
+2022-11-14 09:05:59,660 - django_test - INFO - Authorization Token needed for user list:: Passed
+2022-11-14 09:05:59,738 - django_test - INFO - **********************************************************************
+2022-11-14 09:05:59,738 - django_test - INFO - None
+2022-11-14 09:05:59,738 - django_test - INFO - Only Active user can login:: Passed
+2022-11-14 09:05:59,811 - django_test - INFO - **********************************************************************
+2022-11-14 09:05:59,811 - django_test - INFO - None
+2022-11-14 09:05:59,811 - django_test - INFO - User Registration Successful:: Passed
+2022-11-14 09:05:59,824 - django_test - INFO - **********************************************************************
+2022-11-14 09:05:59,824 - django_test - INFO - None
+2022-11-14 09:05:59,824 - django_test - INFO - User Can't be added with NO details:: Passed
